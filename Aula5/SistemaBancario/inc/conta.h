@@ -22,7 +22,7 @@ public:
     void deposito(double valor);
     void saque(int senha, double valor);
     bool validaSenha(int senha);
-    void transferencia(double valor, Conta *contaDestino); 
+    void transferencia(double valor, Conta *contaDestino); //transfere valor de uma conta para outra
 
 };
 
