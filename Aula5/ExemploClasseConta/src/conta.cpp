@@ -34,14 +34,14 @@ Conta::~Conta() //Destrutor da Classe conta
 
 void Conta::exibeDados() //Metodo que exibe no terminal informações sobre a conta
 {
-    std::cout<< "Titular: "<<this->titular<<std::endl;
+    std::cout<< "Titular: "<<this->titular<<std::endl; //this é um ponteiro para um objeto corrente, aponta p/ um atributo específico do obj
     std::cout<< "Numero: "<<this->numero<<std::endl;
     std::cout<< "Tipo: "<<this->tipo<<std::endl;
 }
 
 double Conta::getSaldo(int senha) //Metodo que mediante a inserção de uma senha, retorna o valor do saldo
 {
-    if(senha==this->senha)
+    if(senha==this->senha)  //senha(argumento da função getsaldo, pode ser outro nome) e this->senha(atributo do objeto)
     {
         return this->saldo;
     }
@@ -53,7 +53,7 @@ double Conta::getSaldo(int senha) //Metodo que mediante a inserção de uma senh
 
 }
 
-void Conta::setSaldo(double valor)//Metodo que define um saldo, atravez desse metodo é possivel ter um saldo negativo
+void Conta::setSaldo(double valor)//Metodo que define um saldo, atraves desse metodo é possivel ter um saldo negativo
 {
     if(saldo>0)
         this->saldo = valor;

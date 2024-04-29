@@ -6,21 +6,21 @@
 class Conta
 {
 private:
-    double saldo;
-    int senha;
+    double saldo; //atributo
+    int senha;    //atributo
 public:
-    Conta();//Construtor
+    Conta();//Construtor  //tem 2 construtores: sobrecarga  //função dos construtores: inicializar atributos
     Conta(int senha, int numero, std::string titular, std::string tipo, double saldo);//Construtor que recebe parametros
-    ~Conta();//Destrutor
-    int numero;
-    std::string titular;
-    std::string tipo;
-    void exibeDados();
-    double getSaldo(int senha);
-    void setSaldo(double valor);
-    void setSenha(int novaSenha);
-    void deposito(double valor);
-    void saque(int senha, double valor);
+    ~Conta();//Destrutor //é automaticamente invocado quando o objeto sai do escopo //destroi os objetos
+    int numero; //atributo
+    std::string titular; //atributo
+    std::string tipo; //atributo
+    void exibeDados(); //método
+    double getSaldo(int senha); //método para retornar o saldo, é preciso do atributo senha para obter o saldo
+    void setSaldo(double valor); //método para configurar o saldo
+    void setSenha(int novaSenha); //método para configurar a senha
+    void deposito(double valor); //método para depositar um valor
+    void saque(int senha, double valor); //método para sacar um valor
 
 };
 

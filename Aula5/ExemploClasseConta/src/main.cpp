@@ -17,12 +17,12 @@ int main()
 
 	Conta contas[4]={{1234,01,"Jose","Corrente",300},{4567,02,"Joao","Poupanca",800},{7890,03,"Maria","Corrente",1000}, {8956,04,"Madalena","Poupanca",2000}};
 
-    Conta cc[2] = {contas[0],contas[2]};
-    Conta cp[2] = {contas[1],contas[3]};
+    Conta cc[2] = {contas[0],contas[2]}; //conta corrente
+    Conta cp[2] = {contas[1],contas[3]}; //conta poupança
 
     cout<<"Tamanho cc: "<<sizeof(cc)<<" - Tamanho cp: "<<sizeof(cp)<<endl;
 
-    Conta* cc_ponteiros[2] = {&contas[0],&contas[2]};
+    Conta* cc_ponteiros[2] = {&contas[0],&contas[2]}; //ponteiros para ocupar menos espaço na memória
     Conta* cp_ponteiros[2] = {&contas[1],&contas[3]};
 
      cout<<"Tamanho cc_ponteiros: "<<sizeof(cc_ponteiros)<<" - Tamanho cp_ponteiros: "<<sizeof(cp_ponteiros)<<endl;
@@ -37,12 +37,12 @@ int main()
       cout<<"Exibindo informacoes das contas-correntes através de um vetor de ponteiros"<<endl;
       foo(cc_ponteiros,2);
       
-    //  for(int i= 0;i<sizeof(cc_ponteiros)/sizeof(cc_ponteiros[0]);i++)
+    //  for(int i= 0;i<sizeof(cc_ponteiros)/sizeof(cc_ponteiros[0]);i++) //para vetor de ponteiros
     //  {
     //      cc_ponteiros[i]->exibeDados();
     //  }
 
-
+    system("pause");
     return 0;
 }
 
