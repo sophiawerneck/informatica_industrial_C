@@ -58,3 +58,4 @@ void Horario::imprimeHorario() const //retorna a hora no formato HH:MM:SS
 {
     cout<<setfill('0')<<setw(2)<<this->getHora()<<":"<<setw(2)<<this->getMinuto()<<":"<<setw(2)<<this->getSegundo()<<endl;
 }
+// setfill preenche o número com 0 a esquerda, setw(2) para imprimir com 2 algarismos

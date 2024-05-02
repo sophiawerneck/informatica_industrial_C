@@ -3,7 +3,7 @@
 #define PILHA_H
 
 template<typename T>//T fica definido como uma "variavel" para os tipos dos atributos e metodos, como por exemplo: int,float,bool...
-class Pilha
+class Pilha //primeiro número armazenado é o último a ser retirado
 {
 private:
     int tam;

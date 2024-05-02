@@ -13,7 +13,7 @@ public:
     int getNumEmpacotados();
     static int getTotalEmpacotados();
     void imprimeNumEmpacotados();
-    static void imprimeTotalEmpacotados();
+    static void imprimeTotalEmpacotados(); //n está associado a nenhum objeto da classe empacotador pq é static, n tem acesso ao ponteiro this
 };
 
 

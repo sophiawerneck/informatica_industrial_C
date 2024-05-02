@@ -8,7 +8,7 @@ private:  //cada um desses dados tem restriçoes, quero validar as informações
     int minuto; //cada objeto vai ter hora, minuto e segundo
     int segundo;
 public:
-    Horario(int = 12, int = 0, int = 0);  
+    Horario(int = 12, int = 0, int = 0);  //mesmo que o usuário n passe nada, o construtor é invocado com esses valores
 
     // funções get
     int getHora() const;  //não recebe nada e retorna um inteiro

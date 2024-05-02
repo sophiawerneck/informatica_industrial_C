@@ -1,5 +1,5 @@
 #include "empacotador.h"
-#include <iostream>
+#include <iostream> //para usar cout
 
 using namespace std;
 
@@ -7,6 +7,8 @@ int Empacotador::totalEmpacotados = 0 ;//Essa variavel é compartilhada com toda
 
 Empacotador::Empacotador(int id): id(id),numEmpacotados(0)//o atributo id recebe id, e o numEmpacotados recebe 0
 {
+   // this->id = id;
+   // this->numEmpacotados = 0;
 }
 
 void Empacotador::empacotar(int numPacotes)//Incrementa a as variaveis total numEmpacotados e totalEmpacotados
